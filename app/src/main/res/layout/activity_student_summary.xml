@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_student_summary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.sonu.hostelmanagementsystem.StudentSummaryActivity">
+
+    <Spinner
+        android:id="@+id/spnMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtYear"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/edtYear"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toStartOf="@+id/edtYear" />
+
+    <EditText
+        android:id="@+id/edtYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="4"
+        android:hint="Year"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/edt_aadhaar_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spnMonth"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Aadhaar No."
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edt_aadhaar_no"
+        android:layout_alignBottom="@+id/edt_aadhaar_no"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/edt_aadhaar_no"
+        android:background="@color/colorMyGreen"
+        android:text="Show"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edt_aadhaar_no"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Name: -"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_academic_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_name"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Academic Year: -"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_total_days_present"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_academic_year"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Total Days Present: -"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_total_classes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_total_days_present"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Total Classes: -"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_attendance_percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_total_classes"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Attendance (%): -"
+        android:textSize="18sp" />
+</RelativeLayout>

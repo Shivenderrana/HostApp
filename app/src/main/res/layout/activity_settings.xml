@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rl_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        tools:context="com.sonu.hostelmanagementsystem.SettingsActivity">
+
+
+        <Button
+            android:id="@+id/btn_delete_students"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/red"
+            android:text="Delete All Students"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/edtYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/btn_delete_students"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:ems="4"
+            android:hint="Year"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Spinner
+            android:id="@+id/spnMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edtYear"
+            android:layout_alignTop="@+id/edtYear"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toStartOf="@+id/edtYear" />
+
+        <Button
+            android:id="@+id/btn_delete_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/spnMonth"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/red"
+            android:text="Delete Attendance"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_delete_database"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/btn_delete_attendance"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/red"
+            android:text="Delete Database"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+</ScrollView>
